@@ -1,5 +1,5 @@
 # openlayer_lifemap
-Display Lifemap using Bbox (ex T-rex) with Openlayers git@github.com:simonpenel/openlayer_lifemap.git
+Display Lifemap using Bbox (ex T-rex) with Openlayers
 
 
 
