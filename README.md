@@ -3,7 +3,7 @@ Display Lifemap using Bbox (ex T-rex) with Openlayers git@github.com:simonpenel/
 
 
 
-# install Opengit@github.com:simonpenel/openlayer_lifemap.gitlayers
+# install Openlayers
 npm create ol-app my-app
 cd my-app
 
