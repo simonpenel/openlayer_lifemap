@@ -9,28 +9,16 @@ import TileLayer from 'ol/layer/Tile.js';
 import {TileDebug} from 'ol/source.js';
 // Styles 
 // ------
-const testStyle = new Style({
+const rankStyle = new Style({
   text: new Text({
     font: 'bold 11px "Open Sans", "Arial Unicode MS", "sans-serif"',
     placement: 'line',
     fill: new Fill({
-      color: 'white',
-    }),
-  }),
-});
-
-
-const rankStyle = new Style({
-  text: new Text({
-    font: '21px Calibri,sans-serif',
-    maxAngle: 0.78,
-    placement: new TextPlacement('line'),
-    fill: new Fill({
       color: 'red',
     }),
-    rotation:0.2,
   }),
 });
+
 const cladeStyle = new Style({
   text: new Text({
     font: '23px Calibri,sans-serif',
@@ -51,7 +39,7 @@ const leaveStyle = new Style({
     }),
   }),
 });
-const style = [testStyle,rankStyle, cladeStyle, leaveStyle];
+const style = [rankStyle, cladeStyle, leaveStyle];
 
 // Carte
 // -----
@@ -97,7 +85,7 @@ var map = new Map({
         url: 'http://134.214.213.45:4000/ranks/{z}/{x}/{y}.pbf',
       }),
       style: function (feature) {
-        testStyle
+        rankStyle
         .getText().setText(feature.get('rank'));
         // .setText([
         //   ` ${feature.get('rank')}`,
