@@ -15,6 +15,14 @@ Display Lifemap using Bbox (ex T-rex) with Openlayers
 
 `cp ../main_lm.js main.js`
 
+(for t-rex)
+
+or 
+
+`cp ../main_lm_bbox.js main.js`
+
+(for bbox)
+
 # start
 
 `npm start`
