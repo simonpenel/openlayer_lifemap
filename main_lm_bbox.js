@@ -142,10 +142,10 @@ var map = new Map({
         return style;
       },
     }),
-    
-    new TileLayer({
-      source: new TileDebug(),
-    }),
+// For debuging    
+//    new TileLayer({
+//      source: new TileDebug(),
+//    }),
   ],
   target: 'map',
   view: new View({
