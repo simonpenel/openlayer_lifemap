@@ -54,6 +54,23 @@ var map = new Map({
       }),
       opacity: 0.3
     }),
+    new VectorTileLayer({
+      source: new VectorTileSource({
+        maxZoom: 42,
+        format: new MVT(),
+        url: 'http://134.214.213.45/xyz/polybac/{z}/{x}/{y}.pbf',
+      }),
+      opacity: 0.3
+    }),	  
+    new VectorTileLayer({
+      source: new VectorTileSource({
+        maxZoom: 42,
+        format: new MVT(),
+        url: 'http://134.214.213.45/xyz/polyarc/{z}/{x}/{y}.pbf',
+      }),
+      opacity: 0.3
+    }),
+
     // Layer lines
     new VectorTileLayer({
       source: new VectorTileSource({
