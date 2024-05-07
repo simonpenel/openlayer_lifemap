@@ -1,6 +1,7 @@
 # openlayer_lifemap
 Display Lifemap using Bbox (ex T-rex) with Openlayers
 
+
 ## 1. clone 
 
 `git clone git@github.com:simonpenel/openlayer_lifemap.git`
@@ -27,6 +28,20 @@ or
 
 (for bbox)
 
-## 4. start
+## 4. start development server
+
+`npm start`
+
+## 5. build production server
+
+`npm run build`
+
+## 6. run production server
+
+`cd ../serveur`
+
+`npm install`
+
+`cp -r  ../my-app/dist/* public/`
 
 `npm start`
