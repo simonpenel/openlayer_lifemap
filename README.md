@@ -45,3 +45,20 @@ or
 `cp -r  ../my-app/dist/* public/`
 
 `npm start`
+
+## 7. nginx
+
+cat  /etc/nginx/sites-available/openlayer 
+    server {
+     listen 80;
+     root /home/ubuntu/ol/openlayer_lifemap/serveur/;
+     server_name prabi-cloud43.univ-lyon1.fr;
+     client_max_body_size 10m ;
+     location / {
+     include proxy_params;
+     proxy_pass http://127.0.0.1:4000;
+     add_header Access-Control-Allow-Origin *;
+     }
+    }
+
+
