@@ -48,7 +48,7 @@ or
 
 ## 7. nginx
 
-cat  /etc/nginx/sites-available/openlayer 
+    cat  /etc/nginx/sites-available/openlayer 
     server {
      listen 80;
      root /home/ubuntu/ol/openlayer_lifemap/serveur/;
